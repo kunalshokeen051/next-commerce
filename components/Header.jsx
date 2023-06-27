@@ -77,15 +77,17 @@ const Header = () => {
           {/* icon end */}
 
           {/* icon start */}
-          <div className='w-8 md:12 h-8 md:h-12 rounded-full flex justify-center items-center hover:bg-black/[0.05] cursor-pointer relative'>
+        <Link href="/cart">
+        <div className='w-8 md:12 h-8 md:h-12 rounded-full flex  justify-center items-center hover:bg-black/[0.05] cursor-pointer relative'>
             <BsCart className='text-[15px] md:text-[20px]' />
             <div className='absolute h-[14px] md:h-[18px] min-w-[14px] md:min-w-[18px] rounded-full bg-rose-800 top-1 left-4 md:left-5 text-white text-[10px] flex justify-center items-center px-[2px] md:px-[5px] md:text-[12px]'>5</div>
           </div>
+        </Link>
           {/* icon end */}
 
 
           {/* mobile icon start */}
-          <div className="'w-8 md:12 h-8 md:h-12 rounded-full flex justify-center items-center hover:bg-black/[0.05] cursor-pointer relative md:-mr-2 mr-2">
+          <div className="'w-8 md:hidden md:12 h-8 md:h-12 rounded-full flex justify-center items-center hover:bg-black/[0.05] cursor-pointer relative md:-mr-2 mr-2">
             {mobileMenu ? (
               <VscChromeClose
                 className='text-[16px]'

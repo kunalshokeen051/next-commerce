@@ -57,19 +57,22 @@ const ProductDetails = () => {
                                 className="grid grid-cols-3 gap-2"
                             >
                                 <div className="border rounded-md text-center py-3 font-medium hover:bg-black/[0.2] cursor-pointer">
-                                    UK 7
+                                    UK 5
+                                </div>
+                                <div className="border rounded-md text-center py-3 font-medium hover:bg-black/[0.2] cursor-pointer">
+                                    UK 6
                                 </div>
                                 <div className="border rounded-md text-center py-3 font-medium hover:bg-black/[0.2] cursor-pointer">
                                     UK 7
                                 </div>
                                 <div className="border rounded-md text-center py-3 font-medium hover:bg-black/[0.2] cursor-pointer">
-                                    UK 7
+                                    UK 8
                                 </div>
                                 <div className="border rounded-md text-center py-3 font-medium hover:bg-black/[0.2] cursor-pointer">
-                                    UK 7
+                                    UK 9
                                 </div>
                                 <div className="border rounded-md text-center py-3 font-medium hover:bg-black/[0.2] cursor-pointer">
-                                    UK 7
+                                    UK 10
                                 </div>
                             </div>
                             {/* SIZE END */}
