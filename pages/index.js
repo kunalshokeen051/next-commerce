@@ -1,11 +1,22 @@
 import HeroBanner from "@/components/HeroBanner"
 import Wrapper from "@/components/Wrapper"
 import ProductCard from "@/components/ProductCard"
+import { useContext } from "react"
+import Loader from "@/components/Loader"
+import { Context } from "@/utils/Context"
 
 export default function Home() {
-  return (
-    <main className="">
-      <HeroBanner />
+ const {isLoading, setIsLoading} = useContext(Context);
+ setTimeout(() => {
+  setIsLoading(false);
+  }, 4000);
+
+
+ return (
+   <main className="">
+   {isLoading ? <Loader/>
+    :<>
+    <HeroBanner />
       <Wrapper>
       {/* heading start */}
         <div className="text-center max-w-[800px] mx-auto my-[50px] md:my-[80px]">
@@ -29,6 +40,7 @@ export default function Home() {
          <ProductCard/>
         </div>
         </Wrapper>
+    </>}
     </main>
   )
 }

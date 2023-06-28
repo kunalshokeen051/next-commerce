@@ -14,15 +14,14 @@ const ProductDetailsCarousel = () => {
         thumbWidth={60}
         className='productCarousel'
       >
-        <img src="/p1.png" alt="prod.png" />
-        <img src="/p2.png" alt="prod.png" />
-        <img src="/p3.png" alt="prod.png" />
-        <img src="/p4.png" alt="prod.png" />
-        <img src="/p5.png" alt="prod.png" />
-        <img src="/p6.png" alt="prod.png" />
-        <img src="/p7.png" alt="prod.png" />
-
-      </Carousel>
+        <img src="/product/product-1/1.webp" alt="prod.png" />
+        <img src="/product/product-1/2.webp" alt="prod.png" />
+        <img src="/product/product-1/3.webp" alt="prod.png" />
+        <img src="/product/product-1/4.webp" alt="prod.png" />
+        <img src="/product/product-1/5.webp" alt="prod.png" />
+        <img src="/product/product-1/6.webp" alt="prod.png" />
+        <img src="/product/product-1/7.webp" alt="prod.png" />
+       </Carousel>
     </div>
   )
 }
