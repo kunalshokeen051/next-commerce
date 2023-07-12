@@ -15,14 +15,6 @@ module.exports = {
       animation: {
         'spin-slow': 'spin 3s linear infinite',
       },
-      colors:{
-        blue:"#014984",
-        white:"#FFFFFF",
-        black:"#000000",
-        grey:"#232222",
-        yellow:"#ffff22",
-        mustard:"#FCC101",
-      },
     },
   },
   plugins: [],

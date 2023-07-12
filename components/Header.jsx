@@ -4,6 +4,8 @@ import Link from 'next/link';
 import Menu from './Menu';
 import MenuMobile from './MenuMobile';
 import Image from 'next/image';
+import {motion} from 'framer-motion';
+import { slideDown } from '@/styles/Animations';
 
 import { IoMdHeartEmpty } from "react-icons/io";
 import { BsCart } from "react-icons/bs";
@@ -42,17 +44,17 @@ const Header = () => {
 
 
   return (
-    <header className={`w-full
+    <motion.header className={`w-full
     h-[50px] md:h-[80px] items-center  justify-between
     z-20 sticky top-0 transition-transform duration-300 
-    ${show} `}>
+    ${show} `} initial={slideDown.hidden} animate={slideDown.visible} variants={slideDown} >
       <Wrapper className="h-[60px] flex  justify-between items-center">
         <Link href="/">
           <Image
           className=''
             src="/logo.svg"
-            width={80}
-            height={100}
+            width={50}
+            height={50}
             alt='logo.svg'
           />
         </Link>
@@ -105,7 +107,7 @@ const Header = () => {
         </div>
 
       </Wrapper>
-    </header>
+    </motion.header>
   )
 }
 

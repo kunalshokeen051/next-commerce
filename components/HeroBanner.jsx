@@ -3,10 +3,14 @@ import React from 'react'
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
 import { BiArrowBack } from 'react-icons/bi';
+import {motion} from 'framer-motion';
+import { fadeIn} from '@/styles/Animations';
 
 const HeroBanner = () => {
     return (
-        <div className='relative text-white text-[20px] w-full max-w-[1360px] mx-auto'>
+        <motion.div className='relative text-white text-[20px] w-full max-w-[1360px] mx-auto'
+        initial={fadeIn.hidden} animate={fadeIn.visible} variants={fadeIn} 
+        >
             <Carousel
             autoPlay={true}
           infiniteLoop={true}
@@ -51,7 +55,7 @@ const HeroBanner = () => {
                     </div>
                 </div>
             </Carousel>
-        </div>
+        </motion.div>
     )
 }
 

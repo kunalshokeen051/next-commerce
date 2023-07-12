@@ -1,8 +1,11 @@
 import React from 'react'
 import Link from 'next/link'
+import { motion } from 'framer-motion'
+import { fadeIn } from '@/styles/Animations'
 
 const ProductCard = () => {
   return (
+    <motion.div initial={fadeIn.hidden} animate={fadeIn.visible} whileFocus={fadeIn.focus} whileHover={fadeIn.hover} >
     <Link href="/product/1">
      <img className='w-full' src="/product-1.webp" alt="prod.webp" />
      <div className="p-4 text-black/[0.2]">
@@ -16,6 +19,7 @@ const ProductCard = () => {
      </div>
      </div>
     </Link>
+    </motion.div>
   )
 }
 

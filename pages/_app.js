@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import '@/styles/globals.css';
-import AppContext from '@/utils/Context'
+import '@/styles/Loader.scss';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 
@@ -17,11 +17,9 @@ export default function App({ Component, pageProps }) {
           content="width=device-width, initial-scale=1"
         />
       </Head>
-      <AppContext>
         <Header />
         <Component {...pageProps} />
         <Footer />
-      </AppContext>
     </div>
   )
 }
